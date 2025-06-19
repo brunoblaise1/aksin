@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const Pool = require('pg').Pool;
 
 
-const devConfig = `postgresql://${process.env.PG_USER}:${process.env.PG_PASSWORD}@${process.env.PG_HOST}:${process.env.PG_PORT}/${process.env.PG_DATABASE}`;
+const devConfig = `postgresql://beef_user:ZklQPA7GzRRCM49ph5WBX6mUfAWWb7y0@dpg-d1a630bipnbc739qaut0-a.oregon-postgres.render.com/beef`
 
 
 const proConfig = process.env.DATABASE_URL; //heroku addons
